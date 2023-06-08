@@ -1,1 +1,11 @@
-<h1>우리는 SIFFER다!</h1>
+<script lang="ts">
+	import AtozSection from './AtozSection.svelte';
+	import Banner from './Banner.svelte';
+	import CompanySection from './CompanySection.svelte';
+	import WhenSection from './WhenSection.svelte';
+</script>
+
+<Banner />
+<AtozSection />
+<WhenSection />
+<CompanySection />

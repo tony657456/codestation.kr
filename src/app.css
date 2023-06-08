@@ -79,4 +79,10 @@
 }
 
 @layer components {
+	.gradient-0 {
+		@apply bg-gradient-to-r from-[#EE0979] to-[#FF6A00];
+	}
+	.text-gradient-0 {
+		@apply bg-gradient-to-r from-[#EE0979] to-[#FF6A00] bg-clip-text text-transparent;
+	}
 }
