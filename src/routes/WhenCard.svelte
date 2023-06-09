@@ -5,7 +5,9 @@
 </script>
 
 <div class="flex flex-col gap-y-4 rounded-2xl bg-neutral-50 p-4">
-	<img src={imageUrl} alt={title} class="aspect-square w-full" />
+	<div class="flex max-md:p-6">
+		<img src={imageUrl} alt={title} class="aspect-square w-full" />
+	</div>
 	<h3 class="text-lg font-bold text-neutral-900">
 		{title} <span class="text-gradient-0">때</span>
 	</h3>

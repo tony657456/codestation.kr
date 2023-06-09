@@ -1,5 +1,5 @@
 <footer class="flex w-full justify-center">
-	<div class="flex w-full max-w-5xl flex-col items-end py-8">
+	<div class="flex w-full max-w-5xl flex-col items-end py-8 max-md:px-4">
 		<div>
 			<span class="text-neutral-500">사업자등록번호 : </span>
 			<span class="text-neutral-50">760-20-01657</span>

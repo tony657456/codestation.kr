@@ -5,7 +5,7 @@
 
 <div class="flex w-full {type === 'question' ? 'justify-start' : 'justify-end'} py-2">
 	<span
-		class="max-w-[80%] rounded-2xl bg-orange-500 p-4 text-xl font-medium text-neutral-50 {type ===
+		class="max-w-[80%] rounded-2xl bg-orange-500 p-4 text-xl font-medium text-neutral-50 max-md:text-base {type ===
 		'question'
 			? ' rounded-bl-none'
 			: 'rounded-br-none'}">{content}</span

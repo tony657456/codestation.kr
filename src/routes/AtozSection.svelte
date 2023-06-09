@@ -13,5 +13,8 @@
 				<AtozCard {...atoz} selected={i === 0} />
 			{/each}
 		</div>
+		<p class="-mt-4 font-medium text-neutral-500">
+			{Atoz[0].description}
+		</p>
 	</div>
 </Container>

@@ -19,10 +19,12 @@
 		<a
 			href="https://minsu.info"
 			target="_blank"
-			class="flex justify-center gap-2 rounded-2xl bg-neutral-200 p-4 text-lg font-medium text-neutral-900"
+			class="flex items-center justify-center gap-2 rounded-2xl bg-neutral-200 p-4 text-lg font-medium text-neutral-900"
 		>
-			<span class="text-neutral-500">개발자 포트폴리오가 궁금하신가요?</span>
-			<span>개발자 포트폴리오 사이트 보기</span>
+			<div class="flex gap-x-2 max-md:flex-col max-md:items-end">
+				<span class="text-neutral-500">개발자 포트폴리오가 궁금하신가요?</span>
+				<span>개발자 포트폴리오 사이트 보기</span>
+			</div>
 			<Icon src={ChevronRight} class="h-6 w-6" />
 		</a>
 	</div>
