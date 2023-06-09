@@ -7,8 +7,10 @@
 
 <Container>
 	<div class="flex w-full flex-col gap-4 py-4">
-		<h1 class="text-4xl font-black">당신이 찾던 회사</h1>
-		<p class="font-medium text-neutral-500">기획과 디자인까지 가능한 풀스택 개발자</p>
+		<h1 class="text-4xl font-black">FAQ</h1>
+		<p class="font-medium text-neutral-500">
+			예상되는 질문들에 미리 답변드립니다. 자세한 사항은 문의 주시면 빠르게 답변드리겠습니다.
+		</p>
 		<div>
 			{#each Faq as item}
 				<FaqCard {...item} />
