@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onDestroy, onMount } from 'svelte';
 	import Container from '../lib/components/Container.svelte';
 	import ScrollDetectContainer from '../lib/components/ScrollDetectContainer.svelte';
 	import { Atoz } from '../lib/constants/atoz';
@@ -18,6 +18,7 @@
 			}
 		}, 3000);
 	}
+
 	onMount(() => {
 		interval = setInterval(() => {
 			selectedIndex++;
@@ -25,7 +26,10 @@
 				selectedIndex = 0;
 			}
 		}, 3000);
-		return () => clearInterval(interval);
+	});
+
+	onDestroy(() => {
+		clearInterval(interval);
 	});
 
 	let isInView: boolean;
