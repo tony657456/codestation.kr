@@ -4,7 +4,7 @@
 	export let imageUrl = '';
 </script>
 
-<div class="flex flex-col gap-y-4 rounded-2xl bg-neutral-50 p-4">
+<div class="flex flex-col gap-y-4 rounded-2xl bg-neutral-50 p-4 {$$props.class}">
 	<div class="flex max-md:p-6">
 		<img src={imageUrl} alt={title} class="aspect-square w-full" />
 	</div>
