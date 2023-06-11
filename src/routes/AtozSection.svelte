@@ -1,9 +1,32 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import Container from '../lib/components/Container.svelte';
 	import ScrollDetectContainer from '../lib/components/ScrollDetectContainer.svelte';
 	import { Atoz } from '../lib/constants/atoz';
 	import { fadeFromBottom } from '../lib/utils/scrollDetectionStyle';
 	import AtozCard from './AtozCard.svelte';
+	import { fade } from 'svelte/transition';
+
+	let selectedIndex = 0;
+	let interval: NodeJS.Timer;
+
+	function startAnimation() {
+		interval = setInterval(() => {
+			selectedIndex++;
+			if (selectedIndex === Atoz.length) {
+				selectedIndex = 0;
+			}
+		}, 3000);
+	}
+	onMount(() => {
+		interval = setInterval(() => {
+			selectedIndex++;
+			if (selectedIndex === Atoz.length) {
+				selectedIndex = 0;
+			}
+		}, 3000);
+		return () => clearInterval(interval);
+	});
 
 	let isInView: boolean;
 </script>
@@ -17,12 +40,24 @@
 			</p>
 			<div class="grid grid-cols-4 gap-x-4 {fadeFromBottom(isInView, 100)}">
 				{#each Atoz as atoz, i}
-					<AtozCard {...atoz} selected={i === 0} />
+					<AtozCard
+						{...atoz}
+						selected={i === selectedIndex}
+						on:mouseenter={() => {
+							selectedIndex = i;
+							clearInterval(interval);
+						}}
+						on:mouseleave={() => {
+							startAnimation();
+						}}
+					/>
 				{/each}
 			</div>
-			<p class="-mt-4 font-medium text-neutral-500 {fadeFromBottom(isInView, 150)}">
-				{Atoz[0].description}
-			</p>
+			{#key selectedIndex}
+				<p class="-mt-4 font-medium text-neutral-500 {fadeFromBottom(isInView, 150)}" in:fade>
+					{Atoz[selectedIndex].description}
+				</p>
+			{/key}
 		</div>
 	</ScrollDetectContainer>
 </Container>
