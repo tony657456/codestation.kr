@@ -38,7 +38,7 @@
 <Container>
 	<ScrollDetectContainer bind:isInView>
 		<div class="flex w-full flex-col gap-4 py-4">
-			<h1 class="text-4xl font-black {fadeFromBottom(isInView)}">AtoZ</h1>
+			<h2 class="text-4xl font-black {fadeFromBottom(isInView)}">AtoZ</h2>
 			<p class="font-medium text-neutral-500 {fadeFromBottom(isInView, 75)}">
 				기획부터 디자인, 개발, QA까지 모두 진행
 			</p>
