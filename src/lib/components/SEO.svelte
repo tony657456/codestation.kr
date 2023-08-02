@@ -37,7 +37,7 @@
 		robots: 'index,follow',
 		openGraph: {
 			...metaData.openGraph,
-			url: `${BASE_URL}${metaData.url}/`,
+			url: `${BASE_URL}/`,
 			title: metaData.title,
 			description: metaData.description,
 			locale: 'ko_KR',
