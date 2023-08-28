@@ -11,7 +11,9 @@
 		<!-- 주소 : 부산광역시 금정구 온천장로 139, 102동 1611호 -->
 		<div>
 			<span class="text-neutral-500">주소 : </span>
-			<span class="text-neutral-50">부산광역시 금정구 온천장로 139, 102동 1611호</span>
+			<span class="text-neutral-50"
+				>부산광역시 동래구 온천장로65번길 9, 동래3차SK뷰, 108동 34층 3412호</span
+			>
 		</div>
 		<!-- 문의 : contact@codestation.kr -->
 		<div>
