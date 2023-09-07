@@ -4,10 +4,11 @@
 	export let metaData: Partial<IMetaTagProperties> = {};
 
 	const defaultMeta: Partial<IMetaTagProperties> = {
-		title: '코드스테이션 | 당신이 찾던 개발외주사',
+		title: '코드스테이션 | 당신이 찾던 외주개발사',
 		description:
 			'코드스테이션은 비개발자 대표님들을 위한 외주 개발 서비스입니다. 서비스의 기획, 디자인부터 개발, QA까지 모두 진행합니다.',
 		keywords: [
+			'코드스테이션',
 			'스타트업',
 			'외주개발',
 			'MVP',
@@ -20,7 +21,6 @@
 			'외주',
 			'프리랜서',
 			'외주 개발',
-			'코드스테이션',
 		],
 		image: '/bi/og-image.png',
 	};
