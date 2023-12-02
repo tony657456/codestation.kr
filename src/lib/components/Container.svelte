@@ -2,6 +2,6 @@
 	export let dark = false;
 </script>
 
-<div class="flex w-full justify-center {dark ? 'bg-neutral-900' : 'bg-neutral-50'}">
-	<div class="flex w-full max-w-5xl flex-col py-8 max-md:px-4"><slot /></div>
+<div class="flex w-full max-w-[1440px] justify-center {dark ? 'bg-neutral-900' : 'bg-neutral-50'}">
+	<div class="flex w-full"><slot /></div>
 </div>
