@@ -8,4 +8,3 @@
 <Seo />
 <Main />
 <SecondMainSection />
-<FaqSection />
