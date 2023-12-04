@@ -79,10 +79,10 @@
 }
 
 @layer components {
-	.gradient-0 {
-		@apply bg-gradient-to-r from-[#EE0979] to-[#FF6A00];
+	.gradient-primary {
+		@apply bg-gradient-to-r from-[#215AEF] to-[#62AEBE];
 	}
-	.text-gradient-0 {
-		@apply bg-gradient-to-r from-[#EE0979] to-[#FF6A00] bg-clip-text text-transparent;
+	.text-gradient-primary {
+		@apply bg-gradient-to-r from-[#3D81B2] to-[#BFF1E2] bg-clip-text text-transparent;
 	}
 }
