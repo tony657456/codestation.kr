@@ -9,7 +9,7 @@
 
 <a
 	href="/{index}"
-	class="flex flex-col gap-y-3 rounded-2xl bg-neutral-800 px-8 py-20 {$$props.class}"
+	class="flex flex-col gap-y-3 rounded-2xl bg-neutral-800 px-8 py-12 {$$props.class}"
 >
 	<p class="text-white max-md:text-3xl">
 		{title} <span class="text-gradient-0" />

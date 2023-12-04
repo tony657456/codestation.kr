@@ -18,7 +18,7 @@
 			<span class="text-neutral-200 max-md:text-sm"
 				>웹, 앱, 서버, 크롤러, AI 까지 작업이 가능합니다.</span
 			>
-			<div class="flex w-3/4 flex-col items-center py-9">
+			<div class="flex w-full flex-col items-center py-9">
 				<span class="py-3 text-2xl text-white max-md:py-0">기술 스택</span>
 				<CleanSection />
 			</div>

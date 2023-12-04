@@ -14,7 +14,7 @@
 			<span class="text-white max-md:text-xs"
 				>폭넓은 스택과 깔끔하고 빠른 속도의 기획, 개발과 디자인을 한번에 챙길 수 있습니다.</span
 			>
-			<div class="w-3/4 pt-14 max-md:w-full max-md:p-6"><BoardSection /></div>
+			<div class="w-full pt-14 max-md:w-full max-md:p-6"><BoardSection /></div>
 		</div>
 	</div>
 </Container>

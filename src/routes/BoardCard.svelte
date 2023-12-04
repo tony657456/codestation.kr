@@ -6,10 +6,10 @@
 </script>
 
 <a href={a} class="flex flex-col gap-y-3 rounded-2xl bg-neutral-800 p-4 {$$props.class}">
-	<div class="flex w-12">
+	<div class="flex w-10">
 		<img src={imageUrl} alt={title} class="aspect-square w-full" />
 	</div>
-	<h3 class="text-3xl font-bold text-white max-md:text-3xl">
+	<h3 class="text-2xl font-bold text-white max-md:text-3xl">
 		{title} <span class="text-gradient-0" />
 	</h3>
 	<p class="pt-1 text-neutral-400 max-md:text-sm">{description}</p>
