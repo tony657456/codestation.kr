@@ -6,12 +6,13 @@
 	export let description = '';
 </script>
 
-<div class="flex w-80 flex-col gap-2 py-36">
+<div class="flex flex-col gap-2 py-36">
 	<img src={imageUrl} alt="flow_icon" class="w-12" />
-	<span class="py-2 text-white underline decoration-solid">{imageName}</span>
-	<div>
+	<span class="text-neutral-100 underline decoration-solid">{imageName}</span>
+	<div class="h-2" />
+	<div class="font-semibold">
 		<span class="text-2xl text-white">{title}</span>
-		<span class="text-2xl text-cyan-500">{colorTitle}</span>
+		<span class="text-gradient-primary text-2xl">{colorTitle}</span>
 	</div>
-	<span class="text-white">{description}</span>
+	<span class="whitespace-pre-line text-neutral-200">{description}</span>
 </div>

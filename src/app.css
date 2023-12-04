@@ -83,6 +83,12 @@
 		@apply bg-gradient-to-r from-[#215AEF] to-[#62AEBE];
 	}
 	.text-gradient-primary {
+		@apply bg-gradient-to-r from-[#215AEF] to-[#62AEBE] bg-clip-text text-transparent;
+	}
+	.text-gradient-secondary {
 		@apply bg-gradient-to-r from-[#3D81B2] to-[#BFF1E2] bg-clip-text text-transparent;
+	}
+	.title-color-primary {
+		@apply text-[#215AEF];
 	}
 }

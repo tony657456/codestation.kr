@@ -2,6 +2,10 @@
 	import { inview } from 'svelte-inview';
 
 	export let isInView: boolean;
+
+	function handleChange(e: any) {
+		isInView = e.detail.inView;
+	}
 </script>
 
 <div class=" hidden delay-75" />
@@ -17,9 +21,7 @@
 		unobserveOnEnter: true,
 		rootMargin: '-20%',
 	}}
-	on:change={(e) => {
-		isInView = e.detail.inView;
-	}}
+	on:change={handleChange}
 >
 	<slot />
 </div>

@@ -7,7 +7,7 @@
 
 <a
 	href="/{index}"
-	class="flex flex-col items-center gap-y-3 rounded-2xl bg-neutral-800 px-8 py-20 {$$props.class}"
+	class="flex flex-col items-center gap-y-3 rounded-2xl bg-neutral-800 px-8 py-16 {$$props.class}"
 >
 	<div class="flex w-24">
 		<img src={imageUrl} alt={title} class="aspect-square w-full" />

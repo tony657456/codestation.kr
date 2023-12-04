@@ -1,10 +1,27 @@
+<script lang="ts">
+	import Button from './Button.svelte';
+
+	let scrollY: number;
+
+	$: hidden = scrollY < 100;
+</script>
+
+<svelte:window bind:scrollY />
 <header
 	class="fixed z-50 flex w-full
-			 justify-center transition-all duration-1000"
+	justify-center {!hidden && 'bg-black'}
+	transition-all duration-300 ease-in-out"
 >
-	<div class="flex w-full py-8 pl-36 max-md:justify-center max-md:py-6 max-md:pl-0">
-		<a href="/" class="w-[254px] max-md:w-[180px]">
-			<img src="logo_name.png" alt="codestation_logo" class="w-full max-md:w-full" />
+	<div
+		class="flex w-full max-w-5xl items-center justify-between py-8 max-md:justify-center max-md:py-6"
+	>
+		<a href="/">
+			<img src="logo_name.png" alt="codestation_logo" class="w-[200px] max-md:w-[180px]" />
 		</a>
+		<Button
+			class="transition-all duration-300 ease-in-out max-md:hidden {!hidden
+				? 'opacity-100'
+				: 'opacity-0'}">문의하기</Button
+		>
 	</div>
 </header>

@@ -1,19 +1,17 @@
 <script lang="ts">
-	import Seo from '../lib/components/SEO.svelte';
-	import Main from './Main.svelte';
-	import SecondMainSection from './SecondMainSection.svelte';
-	import CleanFlow from './CleanFlow.svelte';
-	import CleanDesign from './CleanDesign.svelte';
-	import CleanCode from './CleanCode.svelte';
+	import WhySection from './sections/why/WhySection.svelte';
+	import FlowSection from './sections/flow/FlowSection.svelte';
+	import DesignSection from './sections/design/DesignSection.svelte';
 	import Price from './Price.svelte';
 	import SayDeveloper from './SayDeveloper.svelte';
+	import IntroSection from './sections/intro/IntroSection.svelte';
+	import StackSection from './sections/stacks/StackSection.svelte';
 </script>
 
-<Seo />
-<Main />
-<SecondMainSection />
-<CleanFlow />
-<CleanDesign />
-<CleanCode />
+<IntroSection />
+<WhySection />
+<FlowSection />
+<DesignSection />
+<StackSection />
 <SayDeveloper />
 <Price />

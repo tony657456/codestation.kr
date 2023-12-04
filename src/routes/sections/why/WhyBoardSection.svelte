@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { Board } from '$lib/constants/main.boards';
-	import ScrollDetectContainer from '../lib/components/ScrollDetectContainer.svelte';
-	import { fadeFromBottom, type TDelay } from '../lib/utils/scrollDetectionStyle';
-	import BoardCard from './BoardCard.svelte';
+	import ScrollDetectContainer from '$lib/components/ScrollDetectContainer.svelte';
+	import { fadeFromBottom, type TDelay } from '$lib/utils/scrollDetectionStyle';
+	import WhyBoardCard from './WhyBoardCard.svelte';
 
 	let isInView: boolean;
 
@@ -12,7 +12,7 @@
 <ScrollDetectContainer bind:isInView>
 	<div class="grid w-full grid-cols-3 gap-5 py-4 max-md:grid-cols-1 max-md:gap-2">
 		{#each Board as item, i}
-			<BoardCard {...item} class=" {fadeFromBottom(isInView, delays[i])}" />
+			<WhyBoardCard {...item} class={fadeFromBottom(isInView, delays[i])} />
 		{/each}
 	</div>
 </ScrollDetectContainer>
