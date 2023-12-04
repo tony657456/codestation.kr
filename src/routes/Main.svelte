@@ -6,9 +6,11 @@
 
 <svelte:window bind:scrollY />
 
-<Container>
-	<div class="relative flex h-screen w-full flex-col items-center justify-center">
-		<img src="main_background.png" class="h-full w-full" alt="background" />
-		<FirstMainSection />
-	</div>
-</Container>
+<div class="relative flex h-screen flex-col items-center justify-center">
+	<img src="main_background.png" class="absolute h-full w-full" alt="background" />
+	<Container>
+		<div class="flex w-full flex-col items-center justify-center">
+			<FirstMainSection />
+		</div>
+	</Container>
+</div>
