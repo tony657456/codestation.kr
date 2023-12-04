@@ -3,13 +3,13 @@
 
 	let scrollY: number;
 
-	$: hidden = scrollY < 100;
+	$: show = scrollY > 100;
 </script>
 
 <svelte:window bind:scrollY />
 <header
 	class="fixed z-50 flex w-full
-	justify-center {!hidden && 'bg-black'}
+	justify-center {show && 'bg-black'}
 	transition-all duration-300 ease-in-out"
 >
 	<div
@@ -19,7 +19,7 @@
 			<img src="logo_name.png" alt="codestation_logo" class="w-[200px] max-md:w-[180px]" />
 		</a>
 		<Button
-			class="transition-all duration-300 ease-in-out max-md:hidden {!hidden
+			class="transition-all duration-300 ease-in-out max-md:hidden {show
 				? 'opacity-100'
 				: 'opacity-0'}">문의하기</Button
 		>
