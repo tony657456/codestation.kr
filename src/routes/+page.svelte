@@ -1,13 +1,19 @@
 <script lang="ts">
 	import Seo from '../lib/components/SEO.svelte';
-	import AtozSection from './AtozSection.svelte';
-	import Banner from './Banner.svelte';
-	import FaqSection from './FaqSection.svelte';
-	import WhenSection from './WhenSection.svelte';
+	import Main from './Main.svelte';
+	import SecondMainSection from './SecondMainSection.svelte';
+	import CleanFlow from './CleanFlow.svelte';
+	import CleanDesign from './CleanDesign.svelte';
+	import CleanCode from './CleanCode.svelte';
+	import Price from './Price.svelte';
+	import SayDeveloper from './SayDeveloper.svelte';
 </script>
 
 <Seo />
-<Banner />
-<AtozSection />
-<WhenSection />
-<FaqSection />
+<Main />
+<SecondMainSection />
+<CleanFlow />
+<CleanDesign />
+<CleanCode />
+<SayDeveloper />
+<Price />
