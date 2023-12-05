@@ -79,11 +79,11 @@ export function getDelayClassFromIndex(index: number) {
 
 export function fadeFromBottom(isInView: boolean, delay: TDelay = 0) {
 	let tailwindClass = `transition-all duration-1000 `;
-	tailwindClass += ` ${getDelayClass(delay)}`;
+	tailwindClass += `${getDelayClass(delay)}`;
 	if (isInView) {
-		tailwindClass += ' opacity-100 ';
+		tailwindClass += 'opacity-100 ';
 	} else {
-		tailwindClass += ' translate-y-6 opacity-0 ';
+		tailwindClass += 'translate-y-6 opacity-0 ';
 	}
 	return tailwindClass;
 }
