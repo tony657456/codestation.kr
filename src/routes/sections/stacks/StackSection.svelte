@@ -4,7 +4,7 @@
 </script>
 
 <Container class="min-h-screen">
-	<div class="flex flex-col items-center justify-center bg-black max-md:h-full max-md:py-24">
+	<div class="flex w-full flex-col items-center justify-center bg-black max-md:h-full max-md:py-24">
 		<div class="h-40" />
 		<img src="images/clean_code_icon.png" alt="clean_code_icon" class="w-12" />
 		<span class="py-2 text-white underline decoration-solid">코드스테이션의 강점 03</span>

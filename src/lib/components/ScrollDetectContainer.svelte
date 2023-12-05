@@ -22,6 +22,7 @@
 		rootMargin: '-20%',
 	}}
 	on:change={handleChange}
+	class={$$props.class}
 >
 	<slot />
 </div>

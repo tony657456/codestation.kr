@@ -5,7 +5,15 @@
 </script>
 
 <Container class="h-screen">
-	<img src="main-background.png" slot="background" class="h-full w-full" alt="background" />
+	<video
+		class="bg-video__content h-full w-full object-fill max-md:object-cover"
+		slot="background"
+		autoplay
+		muted
+		loop
+	>
+		<source src="intro-background-video.mov" class="w-full" type="video/mp4" />
+	</video>
 	<div class="flex w-full flex-col items-center justify-between">
 		<UnderArrow hidden />
 		<div class="flex w-full flex-col items-center justify-center">
