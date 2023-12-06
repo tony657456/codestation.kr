@@ -7,6 +7,7 @@
 	import IntroSection from './sections/intro/IntroSection.svelte';
 	import StackSection from './sections/stacks/StackSection.svelte';
 	import Price from './sections/pricing/Price.svelte';
+	export let data;
 </script>
 
 <IntroSection />
