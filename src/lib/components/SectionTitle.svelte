@@ -7,7 +7,7 @@
 </script>
 
 <div class="flex flex-col gap-2 py-36">
-	<img src={imageUrl} alt="flow_icon" class="w-12" />
+	<img src={imageUrl} alt="flow-icon" class="w-12" />
 	<span class="text-neutral-100 underline decoration-solid">{imageName}</span>
 	<div class="h-2" />
 	<div class="font-semibold">

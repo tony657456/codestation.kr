@@ -6,13 +6,13 @@ type TBoard = {
 
 export const Board: TBoard[] = [
 	{
-		imageUrl: '/images/flow_icon.png',
+		imageUrl: '/images/flow-icon.png',
 		title: '깔끔한 플로우',
 		description:
 			'다른 곳에는 없는 코드스테이션만의 깔끔한 플로우를 경험하실 수 있습니다. Integer ante non nunc, eget est justo vel ',
 	},
 	{
-		imageUrl: '/images/design_icon.png',
+		imageUrl: '/images/design-icon.png',
 		title: '고퀄리티 디자인',
 		description:
 			'6년차 UIUX 디자이너와 함께 진행하는 만큼, 당신의 프로젝트가 더욱 높은 완성도를 가지고 가실 수 있습니다.',

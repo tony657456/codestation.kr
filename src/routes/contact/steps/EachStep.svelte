@@ -24,13 +24,15 @@
 		: 'hidden'} "
 >
 	<slot />
-	<ContactButton
-		mode={isValid ? 'confirm' : 'warning'}
-		on:click={(e) => {
-			if (isLastStep === true) return;
-			e.detail.preventDefault();
-			if (isValid === false) return;
-			handleClick();
-		}}
-	/>
+	{#if currentStep === targetStep}
+		<ContactButton
+			mode={isValid ? 'confirm' : 'warning'}
+			on:click={(e) => {
+				if (isLastStep === true) return;
+				e.detail.preventDefault();
+				if (isValid === false) return;
+				handleClick();
+			}}
+		/>
+	{/if}
 </div>

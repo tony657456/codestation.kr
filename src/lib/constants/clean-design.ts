@@ -7,7 +7,7 @@ type TDesign = {
 };
 
 export const CleanDesignSection: TDesign = {
-	imageUrl: '/images/design_icon.png',
+	imageUrl: '/images/design-icon.png',
 	imageName: '코드스테이션의 강점 02',
 	title: '고퀄리티',
 	colorTitle: '디자인 시스템',
