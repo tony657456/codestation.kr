@@ -11,7 +11,7 @@
 
 <ScrollDetectContainer bind:isInView class="w-full">
 	<div class="h-6" />
-	<div class="grid grid-cols-2 gap-12 py-4 max-md:grid-cols-1 max-md:gap-2">
+	<div class="grid grid-cols-2 gap-4 py-4 max-md:grid-cols-1 max-md:gap-4">
 		{#each PriceBoard as item, i}
 			<PriceCard {...item} class=" {fadeFromBottom(isInView, delays[i])}" />
 		{/each}
