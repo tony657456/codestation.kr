@@ -4,7 +4,7 @@
 	export let metaData: Partial<IMetaTagProperties> = {};
 
 	const defaultMeta: Partial<IMetaTagProperties> = {
-		title: '코드스테이션 | 최고의 아웃소싱 파트너',
+		title: '코드스테이션 | 최고의 웹, 앱 아웃소싱 파트너',
 		description:
 			'코드스테이션은 비개발자 대표님들을 위한 외주 개발 서비스입니다. 서비스의 기획, 디자인부터 개발, QA까지 모두 진행합니다.',
 		keywords: [
