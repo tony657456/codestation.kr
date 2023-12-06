@@ -10,7 +10,7 @@
 </script>
 
 <ScrollDetectContainer bind:isInView>
-	<div class="grid w-full grid-cols-3 gap-5 py-4 max-md:grid-cols-1 max-md:gap-2">
+	<div class="grid w-full grid-cols-3 gap-4 py-4 max-md:grid-cols-1 max-md:gap-4">
 		{#each Board as item, i}
 			<WhyBoardCard {...item} class={fadeFromBottom(isInView, delays[i])} />
 		{/each}
