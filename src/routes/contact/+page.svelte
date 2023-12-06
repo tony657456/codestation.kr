@@ -1,5 +1,11 @@
 <script>
-	import ProjectNameStep from './ProjectNameStep.svelte';
+	import Information from './steps/Information.svelte';
+	import NameStep from './steps/NameStep.svelte';
+	export let step = 0;
 </script>
 
-<ProjectNameStep />
+{#if step === 0}
+	<NameStep />
+{:else if step === 1}
+	<Information />
+{/if}
