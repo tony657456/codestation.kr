@@ -2,7 +2,6 @@
 	export let title = '';
 	export let description = '';
 	export let imageUrl = '';
-	export let index = '';
 </script>
 
 <div
