@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { DevelopmentTypes, type TDevelopmentType } from '$lib/constants/development-type';
-	import WarningButton from '../buttons/WarningButton.svelte';
+	import AlertText from '../AlertText.svelte';
 	import EachStep from './EachStep.svelte';
 	import SelectCard from './SelectCard.svelte';
 	export let step = 0;
@@ -21,7 +21,7 @@
 				/>
 			{/each}
 			<div class="mt-4 flex">
-				<WarningButton class={selectedDeveopmentType !== undefined ? '' : 'hidden'} />
+				<AlertText hidden={selectedDeveopmentType === undefined} />
 			</div>
 		</div>
 	</div>

@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { InformationInput } from '$lib/constants/information';
-	import WarningButton from '../buttons/WarningButton.svelte';
+	import { isNotEmpty } from '$lib/utils/textValidation';
 	import EachStep from './EachStep.svelte';
-	import InputBox from './InputBox.svelte';
+	import Input from './Input.svelte';
 	export let step = 0;
 
 	let values: {
@@ -13,8 +13,6 @@
 		email: '',
 		company: '',
 	};
-	// values['phoneNumber'];
-	// values.phoneNumber;
 </script>
 
 <EachStep bind:currentStep={step} targetStep={1} isValid>
@@ -24,10 +22,7 @@
 			{#each InformationInput as item}
 				<div class="flex flex-col">
 					<span class="title-color-secondary">{item.title}</span>
-					<InputBox bind:value={values[item.name]} />
-					<div class="mt-4 flex">
-						<WarningButton class={values[item.name]?.length > 0 ? 'hidden' : ''} />
-					</div>
+					<Input bind:value={values[item.name]} name={item.name} validate={isNotEmpty} />
 				</div>
 			{/each}
 		</div>
