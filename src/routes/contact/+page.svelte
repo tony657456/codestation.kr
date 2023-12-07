@@ -3,6 +3,6 @@
 	import ContactForm from './ContactForm.svelte';
 </script>
 
-<Container class="flex justify-center">
+<Container class="flex items-center justify-center">
 	<ContactForm />
 </Container>
