@@ -29,7 +29,7 @@
 			>
 			<div class="h-4" />
 			<a href="/contact">
-				<GradientButton>코드스테이션 문의하기</GradientButton>
+				<GradientButton class="px-10 py-4 text-xl font-bold">코드스테이션 문의하기</GradientButton>
 			</a>
 		</div>
 		<UnderArrow />
