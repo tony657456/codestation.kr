@@ -9,7 +9,7 @@
 </script>
 
 <button
-	class="rounded-2xl border {onClick ? 'border-sky-400' : 'border-sky-800'}"
+	class="rounded-2xl border {onClick ? 'border-gradient-primary' : 'border-blue-600'}"
 	on:click|preventDefault={handleClick}
 >
 	<div class="flex items-center justify-start px-2 py-1">

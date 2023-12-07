@@ -4,7 +4,6 @@
 	export let value = '';
 	export let name = '';
 	export let validate: (value: string) => boolean = () => true;
-
 	let status: 'initialized' | 'valid' | 'invalid' = 'initialized';
 </script>
 
@@ -15,7 +14,7 @@
 		on:input={() => {
 			status = validate(value) ? 'valid' : 'invalid';
 		}}
-		class="border-b-2 border-[#dbe4fa] bg-transparent p-2 text-white"
+		class="border-b-2 border-blue-600 bg-transparent p-2 text-white"
 		placeholder="답변을 입력해 주세요..."
 	/>
 	<AlertText hidden={status !== 'invalid'} />
