@@ -4,6 +4,7 @@ import { redirect, type Actions } from '@sveltejs/kit';
 export const actions = {
 	default: async ({ request }) => {
 		const data = await request.formData();
+		console.log(data);
 		const name = data.get('name') as string;
 		const information = data.get('information') as string;
 		try {
