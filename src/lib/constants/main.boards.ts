@@ -37,6 +37,7 @@ export const Board: TBoard[] = [
 	{
 		imageUrl: '/images/mvp-icon.png',
 		title: '오직, 가설 검증',
-		description: 'MVP를 통해 가설을 검증하고, 피드백을 통해 프로덕트를 발전시킵니다.',
+		description:
+			'MVP를 통해 가설을 검증하고, 피드백을 통해 프로덕트를 발전시킵니다. 가설 검증을 위한 최고의 파트너가 되겠습니다.',
 	},
 ];

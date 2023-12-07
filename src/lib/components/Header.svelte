@@ -18,10 +18,18 @@
 		<a href="/">
 			<img src="logo_name.png" alt="codestation_logo" class="w-[200px] max-md:w-[180px]" />
 		</a>
-		<Button
-			class="transition-all duration-300 ease-in-out max-md:hidden {show
-				? 'opacity-100'
-				: 'opacity-0'}">문의하기</Button
+		<a
+			href="/contact"
+			on:click={(e) => {
+				e.preventDefault();
+				window.location.pathname = '/contact';
+			}}
 		>
+			<Button
+				class="transition-all duration-300 ease-in-out max-md:hidden {show
+					? 'opacity-100'
+					: 'opacity-0'}">문의하기</Button
+			>
+		</a>
 	</div>
 </header>

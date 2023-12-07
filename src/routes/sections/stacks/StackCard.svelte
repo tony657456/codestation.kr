@@ -11,5 +11,5 @@
 	<h3 class="text-2xl font-bold text-white max-md:text-3xl">
 		{title} <span class="text-gradient-0" />
 	</h3>
-	<p class="whitespace-pre-line pt-1 text-center text-xs text-neutral-400">{description}</p>
+	<p class="whitespace-pre-line pt-1 text-center text-sm text-neutral-400">{description}</p>
 </div>
