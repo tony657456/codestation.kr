@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
 	import ConfirmButton from './ConfirmButton.svelte';
-	// export let mode: 'confirm' | 'warning' = 'confirm';
 
 	const dispatch = createEventDispatcher();
 

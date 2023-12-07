@@ -5,6 +5,5 @@
 </script>
 
 <Container class="min-h-screen">
-	<!-- <img src="main-background.png" slot="background" class="h-full w-full" alt="background" /> -->
 	<SectionTitle {...CleanFlowSection} />
 </Container>
