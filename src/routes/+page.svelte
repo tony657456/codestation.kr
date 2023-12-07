@@ -1,4 +1,5 @@
 <script lang="ts">
+	import GradientBorderContainer from '$lib/components/GradientBorderContainer.svelte';
 	import {
 		IntroSection,
 		WhySection,
@@ -17,3 +18,8 @@
 <StackSection />
 <DevelopmentSection />
 <PricingSection />
+<div class="w-fit text-white">
+	<GradientBorderContainer padding="3px">
+		<div class="p-4">hello</div>
+	</GradientBorderContainer>
+</div>
