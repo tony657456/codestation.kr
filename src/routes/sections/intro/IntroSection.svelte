@@ -23,9 +23,9 @@
 				>코드스테이션</span
 			>
 			<div class="h-4" />
-			<span class="text-lg text-neutral-100 max-md:text-base">기획, 개발, 디자인 올인원</span>
+			<span class="text-lg text-neutral-100 max-md:text-base">기획, 개발, 디자인, QA 올인원</span>
 			<span class="pb-6 text-lg text-neutral-100 max-md:text-base"
-				>아이디어에서 현실로의 완벽한 비즈니스</span
+				>당신이 가진 비즈니스 아이디어를 최고의 프로덕트로</span
 			>
 			<div class="h-4" />
 			<a href="/contact">
