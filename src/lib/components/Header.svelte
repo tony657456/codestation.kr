@@ -18,13 +18,7 @@
 		<a href="/">
 			<img src="logo_name.png" alt="codestation_logo" class="w-[200px] max-md:w-[180px]" />
 		</a>
-		<a
-			href="/contact"
-			on:click={(e) => {
-				e.preventDefault();
-				window.location.pathname = '/contact';
-			}}
-		>
+		<a href="/contact" data-sveltekit-reload>
 			<Button
 				class="transition-all duration-300 ease-in-out max-md:hidden {show
 					? 'opacity-100'

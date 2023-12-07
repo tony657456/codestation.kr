@@ -29,7 +29,7 @@
 				>당신이 가진 비즈니스 아이디어를 최고의 프로덕트로</span
 			>
 			<div class="h-4" />
-			<a href="/contact">
+			<a href="/contact" data-sveltekit-reload>
 				<GradientButton class="px-10 py-4 text-xl font-bold">코드스테이션 문의하기</GradientButton>
 			</a>
 		</div>
