@@ -2,9 +2,9 @@
 	export let number = '';
 	export let value = '';
 
-	$: onClick = false;
+	let onClick = false;
 	function handleClick() {
-		onClick = true;
+		onClick = !onClick;
 	}
 </script>
 
