@@ -19,14 +19,14 @@
 </script>
 
 <div
-	class="flex min-h-screen w-full flex-col items-center justify-center gap-4 bg-black {visible
+	class="flex min-h-screen w-full flex-col items-center justify-center bg-black {visible
 		? 'flex'
 		: 'hidden'} "
 >
 	<slot />
+	<div class="h-3" />
 	{#if currentStep === targetStep}
 		<ContactButton
-			mode={isValid ? 'confirm' : 'warning'}
 			on:click={(e) => {
 				if (isLastStep === true) return;
 				e.detail.preventDefault();
