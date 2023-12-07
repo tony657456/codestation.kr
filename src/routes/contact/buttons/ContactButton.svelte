@@ -1,9 +1,7 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
 	import ConfirmButton from './ConfirmButton.svelte';
-	import WarningButton from './WarningButton.svelte';
-
-	export let mode: 'confirm' | 'warning' = 'confirm';
+	// export let mode: 'confirm' | 'warning' = 'confirm';
 
 	const dispatch = createEventDispatcher();
 
@@ -22,9 +20,5 @@
 	}}
 	class="flex w-1/2 justify-start"
 >
-	{#if mode === 'confirm'}
-		<ConfirmButton />
-	{:else}
-		<WarningButton />
-	{/if}
+	<ConfirmButton />
 </button>
