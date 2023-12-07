@@ -1,20 +1,21 @@
 <script lang="ts">
-	import Container from '$lib/components/Container.svelte';
 	import GradientButton from '$lib/components/GradientButton.svelte';
 	import UnderArrow from './UnderArrow.svelte';
 </script>
 
-<Container class="h-screen">
+<div class="relative h-screen">
 	<video
-		class="bg-video__content h-full w-full object-fill max-md:object-cover"
-		slot="background"
+		class="bg-video__content absolute inset-0 -z-10 h-full w-full object-fill max-md:object-cover"
+		playsinline
 		autoplay
 		muted
 		loop
 	>
 		<source src="intro-background-video.mov" class="w-full" type="video/mp4" />
 	</video>
-	<div class="flex w-full flex-col items-center justify-between">
+	<div
+		class="z-10 flex h-full w-full flex-col items-center justify-between bg-gradient-to-b from-transparent via-black/10 to-black"
+	>
 		<UnderArrow hidden />
 		<div class="flex w-full flex-col items-center justify-center">
 			<span class="text-4xl font-semibold text-white max-md:text-2xl">최고의 아웃소싱 파트너</span>
@@ -34,4 +35,4 @@
 		</div>
 		<UnderArrow />
 	</div>
-</Container>
+</div>
