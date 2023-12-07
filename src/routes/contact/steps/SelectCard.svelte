@@ -1,13 +1,25 @@
 <script lang="ts">
 	export let number = '';
-	export let subtitle = '';
 	export let value = '';
+
+	$: onClick = false;
+	function handleClick() {
+		onClick = true;
+	}
 </script>
 
-<div class="rounded-2xl border border-sky-400">
+<button
+	class="rounded-2xl border {onClick ? 'border-sky-400' : 'border-sky-800'}"
+	on:click|preventDefault={handleClick}
+>
 	<div class="flex items-center justify-start px-2 py-1">
-		<div class="rounded-full border border-sky-300 px-2 text-sm text-sky-300">{number}</div>
-		<span class="mx-2 text-lg text-sky-300">{subtitle}</span>
-		<input bind:value name={subtitle} />
+		<div
+			class="rounded-full border border-sky-300 px-2 text-sm text-sky-300 {onClick
+				? 'bg-sky-500'
+				: ''}"
+		>
+			{number}
+		</div>
+		<span class="mx-2 text-lg text-sky-300 {onClick ? 'font-bold' : ''}">{value}</span>
 	</div>
-</div>
+</button>
