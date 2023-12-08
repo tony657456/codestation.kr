@@ -8,7 +8,7 @@
 	let selectedDeveopmentType: TDevelopmentType | undefined;
 </script>
 
-<EachStep bind:currentStep={step} targetStep={2} isValid isLastStep>
+<EachStep bind:currentStep={step} targetStep={2} isValid>
 	<div class="flex w-1/2 flex-col gap-4">
 		<h1 class="text-3xl text-white">3. 개발형태를 알려주세요 ☺️*</h1>
 		<div class="flex flex-col gap-3">
