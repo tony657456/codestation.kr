@@ -7,7 +7,10 @@
 
 	export let selected = false;
 
-	export const dispacher = createEventDispatcher();
+	const dispatch = createEventDispatcher();
+	function handleClick() {
+		dispatch('click');
+	}
 </script>
 
 <button
