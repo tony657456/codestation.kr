@@ -1,10 +1,13 @@
 <script lang="ts">
 	import GradientBorderContainer from '$lib/components/GradientBorderContainer.svelte';
+	import { createEventDispatcher } from 'svelte';
 	import { Check, Icon } from 'svelte-hero-icons';
 	export let number = '';
 	export let value = '';
 
-	let selected = false;
+	export let selected = false;
+
+	export const dispacher = createEventDispatcher();
 </script>
 
 <button
