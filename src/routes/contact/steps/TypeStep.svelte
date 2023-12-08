@@ -6,6 +6,7 @@
 	export let step = 0;
 
 	let selectedDeveopmentType: TDevelopmentType | undefined;
+	let selectedDeveopmentTypes: TDevelopmentType[] = [];
 </script>
 
 <EachStep bind:currentStep={step} targetStep={2} isValid>
@@ -17,11 +18,23 @@
 					on:click={() => {
 						selectedDeveopmentType = item;
 					}}
+					selected={selectedDeveopmentType === item}
 					{...item}
 				/>
+				<!-- <SelectCard
+					on:click={() => {
+						if (selectedDeveopmentTypes.some((type) => type === item)) {
+							selectedDeveopmentTypes = selectedDeveopmentTypes.filter((type) => type !== item);
+						} else {
+							selectedDeveopmentTypes = [...selectedDeveopmentTypes, item];
+						}
+					}}
+					selected={selectedDeveopmentTypes.some((type) => type === item)}
+					{...item}
+				/> -->
 			{/each}
 			<div class="mt-4 flex">
-				<AlertText hidden={selectedDeveopmentType === undefined} />
+				<AlertText hidden={selectedDeveopmentType !== undefined} />
 			</div>
 		</div>
 	</div>

@@ -12,7 +12,7 @@
 	<div class="h-2" />
 	<div class="font-semibold">
 		<span class="text-2xl text-white">{title}</span>
-		<span class="text-gradient-primary text-2xl">{colorTitle}</span>
+		<span class="text-gradient-primary text-2xl font-extrabold">{colorTitle}</span>
 	</div>
 	<span class="whitespace-pre-line text-neutral-200">{description}</span>
 </div>

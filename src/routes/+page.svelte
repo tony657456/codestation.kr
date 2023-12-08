@@ -1,12 +1,11 @@
 <script lang="ts">
-	import GradientBorderContainer from '$lib/components/GradientBorderContainer.svelte';
+	import FloatingButton from '$lib/components/FloatingButton.svelte';
 	import {
 		IntroSection,
 		WhySection,
 		FlowSection,
 		DesignSection,
 		StackSection,
-		DevelopmentSection,
 		PricingSection,
 	} from './sections';
 </script>
@@ -16,6 +15,5 @@
 <FlowSection />
 <DesignSection />
 <StackSection />
-<DevelopmentSection />
 <PricingSection />
 <div class="w-fit text-white" />
