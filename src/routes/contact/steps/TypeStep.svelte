@@ -10,8 +10,8 @@
 </script>
 
 <EachStep bind:currentStep={step} targetStep={2} isValid>
-	<div class="flex w-1/2 flex-col gap-4">
-		<h1 class="text-3xl text-white">3. 개발형태를 알려주세요 ☺️*</h1>
+	<div class="flex w-1/2 flex-col gap-4 max-md:w-full max-md:px-1">
+		<h1 class="text-3xl text-white max-md:text-xl">3. 개발형태를 알려주세요 ☺️*</h1>
 		<div class="flex flex-col gap-3">
 			{#each DevelopmentTypes as item}
 				<SelectCard
@@ -33,9 +33,9 @@
 					{...item}
 				/> -->
 			{/each}
-			<div class="mt-4 flex">
-				<AlertText hidden={selectedDeveopmentType !== undefined} />
-			</div>
+		</div>
+		<div class="flex">
+			<AlertText hidden={selectedDeveopmentType !== undefined} />
 		</div>
 	</div>
 	{#if selectedDeveopmentType}

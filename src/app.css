@@ -88,6 +88,9 @@
 	.title-color-primary {
 		@apply text-[#215AEF];
 	}
+	.progressbar-color-primary {
+		@apply bg-[#3B82F6];
+	}
 	.text-gradient-secondary {
 		@apply bg-gradient-to-r from-[#3D81B2] to-[#BFF1E2] bg-clip-text text-transparent;
 	}

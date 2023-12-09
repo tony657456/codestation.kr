@@ -5,27 +5,28 @@
 	import SelectCard from './SelectCard.svelte';
 	export let step = 0;
 
-	let selectedPurposeContents: TPurposeStep | undefined;
+	let selectedPurposeType: TPurposeStep | undefined;
 </script>
 
 <EachStep bind:currentStep={step} targetStep={3} isValid>
-	<div class="flex w-1/2 flex-col gap-4">
-		<h1 class="text-3xl text-white">4. 제작 목적에 대해 선택해주세요 💡*</h1>
+	<div class="flex w-1/2 flex-col gap-4 max-md:w-full max-md:px-1">
+		<h1 class="text-3xl text-white max-md:text-xl">4. 제작 목적에 대해 선택해주세요 💡*</h1>
 		<div class="flex flex-col gap-3">
 			{#each PurposeContents as item}
 				<SelectCard
 					on:click={() => {
-						selectedPurposeContents = item;
+						selectedPurposeType = item;
 					}}
+					selected={selectedPurposeType === item}
 					{...item}
 				/>
 			{/each}
-			<div class="mt-4 flex">
-				<AlertText hidden={selectedPurposeContents === undefined} />
-			</div>
+		</div>
+		<div class="flex">
+			<AlertText hidden={selectedPurposeType !== undefined} />
 		</div>
 	</div>
-	{#if selectedPurposeContents}
-		<input name="developmentType" value={selectedPurposeContents.value} hidden />
+	{#if selectedPurposeType}
+		<input name="developmentType" value={selectedPurposeType.value} hidden />
 	{/if}
 </EachStep>

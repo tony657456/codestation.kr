@@ -1,13 +1,14 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
 	import { goto } from '$app/navigation';
+	import { Backspace, Icon } from 'svelte-hero-icons';
 	import BudgetStep from './steps/BudgetStep.svelte';
 	import InformationStep from './steps/InformationStep.svelte';
 	import NameStep from './steps/NameStep.svelte';
 	import PurposeStep from './steps/PurposeStep.svelte';
 	import TypeStep from './steps/TypeStep.svelte';
 
-	let step = 0;
+	export let step = 0;
 	const lastStep = 1;
 </script>
 
@@ -25,7 +26,7 @@
 		};
 	}}
 	method="post"
-	class="w-full"
+	class="flex w-full flex-col"
 >
 	<NameStep bind:step />
 	<InformationStep bind:step />
