@@ -16,4 +16,4 @@
 <DesignSection />
 <StackSection />
 <PricingSection />
-<FloatingButton />
+<div class="w-fit text-white" />

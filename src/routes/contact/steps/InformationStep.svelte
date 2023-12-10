@@ -16,8 +16,8 @@
 </script>
 
 <EachStep bind:currentStep={step} targetStep={1} isValid>
-	<div class="flex w-1/2 flex-col gap-4">
-		<h1 class="text-3xl text-white">2. 프로젝트 정보를 입력해주세요.*</h1>
+	<div class="flex w-1/2 flex-col gap-4 max-md:w-full max-md:px-1">
+		<h1 class="text-3xl text-white max-md:text-xl">2. 프로젝트 정보를 입력해주세요.*</h1>
 		<div class="flex flex-col gap-4">
 			{#each InformationInput as item}
 				<div class="flex flex-col">

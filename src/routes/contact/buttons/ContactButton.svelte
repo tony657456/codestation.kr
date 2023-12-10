@@ -17,7 +17,7 @@
 	on:click={(e) => {
 		handleClick(e);
 	}}
-	class="flex w-1/2 justify-start"
+	class="flex w-1/2 justify-start max-md:w-full max-md:px-1"
 >
 	<ConfirmButton />
 </button>

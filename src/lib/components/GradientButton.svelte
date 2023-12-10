@@ -1,3 +1,3 @@
-<button class="gradient-primary box-border rounded-full text-white {$$props.class}">
+<button class="gradient-primary box-border items-center rounded-full text-white {$$props.class}">
 	<slot />
 </button>
