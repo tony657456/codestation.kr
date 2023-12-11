@@ -6,23 +6,18 @@ export type TDevelopmentType = {
 
 export const DevelopmentTypes: TDevelopmentType[] = [
 	{
-		name: 'landing',
-		number: 'A',
-		value: '랜딩페이지',
-	},
-	{
 		name: 'web',
-		number: 'B',
-		value: 'Web 서비스',
+		number: 'A',
+		value: 'WEB',
 	},
 	{
 		name: 'app',
-		number: 'C',
-		value: 'APP 서비스',
+		number: 'B',
+		value: '크로스플랫폼 APP',
 	},
 	{
 		name: 'admin',
-		number: 'D',
-		value: '관리자 커스텀(대시보드)',
+		number: 'C',
+		value: '관리자 페이지(대시보드)',
 	},
 ];

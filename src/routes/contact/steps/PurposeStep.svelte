@@ -27,6 +27,6 @@
 		</div>
 	</div>
 	{#if selectedPurposeType}
-		<input name="developmentType" value={selectedPurposeType.value} hidden />
+		<input name="purpose" value={selectedPurposeType.value} hidden />
 	{/if}
 </EachStep>

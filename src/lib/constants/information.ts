@@ -6,22 +6,22 @@ type TInformation = {
 
 export const InformationInput: TInformation[] = [
 	{
-		name: 'name',
+		name: 'clientName',
 		title: '*이름',
 		placeholder: '이름',
 	},
 	{
-		name: 'phoneNumber',
+		name: 'clientPhoneNumber',
 		title: '*전화번호',
 		placeholder: '010-****-****',
 	},
 	{
-		name: 'email',
+		name: 'clientEmail',
 		title: '*이메일',
 		placeholder: 'codestation@gmail.com',
 	},
 	{
-		name: 'company',
+		name: 'clientCompany',
 		title: '*회사',
 		placeholder: 'codestation',
 	},

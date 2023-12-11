@@ -21,17 +21,6 @@
 					selected={selectedDeveopmentType === item}
 					{...item}
 				/>
-				<!-- <SelectCard
-					on:click={() => {
-						if (selectedDeveopmentTypes.some((type) => type === item)) {
-							selectedDeveopmentTypes = selectedDeveopmentTypes.filter((type) => type !== item);
-						} else {
-							selectedDeveopmentTypes = [...selectedDeveopmentTypes, item];
-						}
-					}}
-					selected={selectedDeveopmentTypes.some((type) => type === item)}
-					{...item}
-				/> -->
 			{/each}
 		</div>
 		<div class="flex">
@@ -39,6 +28,6 @@
 		</div>
 	</div>
 	{#if selectedDeveopmentType}
-		<input name="developmentType" value={selectedDeveopmentType.value} hidden />
+		<input name="type" value={selectedDeveopmentType.value} hidden />
 	{/if}
 </EachStep>

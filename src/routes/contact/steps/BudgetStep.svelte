@@ -27,6 +27,6 @@
 		</div>
 	</div>
 	{#if selectedBudgetType}
-		<input name="developmentType" value={selectedBudgetType.value} hidden />
+		<input name="budget" value={selectedBudgetType.value} hidden />
 	{/if}
 </EachStep>

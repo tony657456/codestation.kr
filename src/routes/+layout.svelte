@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import FloatingButton from '$lib/components/FloatingButton.svelte';
 	import Seo from '$lib/components/SEO.svelte';
 	import '../app.css';
 	import Footer from '../lib/components/Footer.svelte';
@@ -11,4 +12,5 @@
 {#key $page.url.pathname}
 	<slot />
 {/key}
+<FloatingButton />
 <Footer />
