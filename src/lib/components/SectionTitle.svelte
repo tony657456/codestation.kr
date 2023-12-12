@@ -6,7 +6,7 @@
 	export let description = '';
 </script>
 
-<div class="flex flex-col gap-2 py-36">
+<div class="flex flex-col gap-2 py-36 {$$props.class}">
 	<img src={imageUrl} alt="flow-icon" class="w-12" />
 	<span class="text-neutral-100 underline decoration-solid">{imageName}</span>
 	<div class="h-2" />

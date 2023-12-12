@@ -4,7 +4,7 @@
 </script>
 
 <Container class="z-20 min-h-screen bg-transparent">
-	<div slot="background" class="relative h-full w-full">
+	<div slot="background" class="h-full w-full">
 		<img
 			src="price_background.png"
 			class="absolute inset-0 -z-10 h-screen w-full object-cover"

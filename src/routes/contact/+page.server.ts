@@ -1,3 +1,4 @@
+import { SECRET_SUPABASE_API_KEY, SECRET_SUPABASE_URL } from '$env/static/private';
 import { SlackMessageModule } from '$lib/modules/slack-message';
 import { supabase } from '$lib/supabaseCilient';
 import { redirect, type Actions, fail } from '@sveltejs/kit';
@@ -25,17 +26,18 @@ export const actions = {
 		try {
 			await supabase.from('contact').insert({
 				name,
+				information: 'test',
 				client_name: clientName,
 				client_phone_number: clientPhoneNumber,
 				client_email: clientEmail,
 				client_company: clientCompany,
 				type,
 				purpose,
+				budget,
 			});
 		} catch (error) {
 			console.log(error);
 		}
-
 		const slackMessageModule = new SlackMessageModule();
 		await slackMessageModule.sendNewContactMessage(
 			name as string,
