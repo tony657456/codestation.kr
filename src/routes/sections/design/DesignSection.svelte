@@ -4,7 +4,7 @@
 	import { CleanDesignSection } from '$lib/constants/clean-design';
 </script>
 
-<Container class="min-h-screen">
+<Container class="min-h-screen items-center">
 	<div slot="background" class="relative h-full w-full">
 		<img
 			src="/images/design_background.png"

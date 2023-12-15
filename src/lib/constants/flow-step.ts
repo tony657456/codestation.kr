@@ -1,31 +1,45 @@
-export type TFlowStep = {
+export type TBefoteName = {
 	beforeName: string;
-	nextName: string;
+};
+export type TAfterName = {
+	afterName: string;
 };
 
-export const FlowStep: TFlowStep[] = [
+export const BeforeName: TBefoteName[] = [
 	{
 		beforeName: '성급한 계약',
-		nextName: '신중한 계약',
 	},
 	{
 		beforeName: '부족한 기획',
-		nextName: '꼼꼼한 기획 회의',
 	},
 	{
 		beforeName: '안티 패턴 디자인',
-		nextName: '깔끔한 디자인 작업',
 	},
 	{
 		beforeName: '버그 투성이',
-		nextName: '실력있는 개발',
 	},
 	{
 		beforeName: '추가 개발',
-		nextName: '완벽한 Q/A',
 	},
 	{
 		beforeName: '기능 누락',
-		nextName: '완벽한 Q/A',
+	},
+];
+
+export const AfterName: TAfterName[] = [
+	{
+		afterName: '신중한 계약',
+	},
+	{
+		afterName: '꼼꼼한 기획 회의',
+	},
+	{
+		afterName: '깔끔한 디자인 작업',
+	},
+	{
+		afterName: '실력있는 개발',
+	},
+	{
+		afterName: '완벽한 Q/A',
 	},
 ];

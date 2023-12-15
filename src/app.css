@@ -78,24 +78,6 @@
 	}
 }
 
-@keyframes moveRight {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(100%);
-	}
-}
-
-@keyframes changeColor {
-	0% {
-		background-color: #ff0000; /* 시작 색상 (빨간색) */
-	}
-	100% {
-		background-color: #808080; /* 종료 색상 (회색) */
-	}
-}
-
 @layer components {
 	.gradient-primary {
 		@apply bg-gradient-to-r from-[#215AEF] to-[#62AEBE];
@@ -106,23 +88,17 @@
 	.title-color-primary {
 		@apply text-[#215AEF];
 	}
+	.flow-color-primary {
+		@apply bg-gradient-to-br from-red-800 to-red-500;
+	}
 	.progressbar-color-primary {
 		@apply bg-[#3B82F6];
-	}
-	.animate-right-primary {
-		animation: moveRight 1s forwards; /* 1s 동안 이동하도록 설정 */
 	}
 	.text-gradient-secondary {
 		@apply bg-gradient-to-r from-[#3D81B2] to-[#BFF1E2] bg-clip-text text-transparent;
 	}
 	.title-color-secondary {
 		@apply text-[#3B82F6];
-	}
-	.animate-right-secondary {
-		animation: moveRight 1s forwards 1s; /* 1s 동안 이동하도록 설정 */
-	}
-	.animate-right-third {
-		animation: moveRight 1s forwards 2s; /* 1s 동안 이동하도록 설정 */
 	}
 	.color-change {
 		animation: changeColor 1s ease-in-out forwards; /* 1초 동안 서서히 변경, 필요에 따라 조절 가능 */
