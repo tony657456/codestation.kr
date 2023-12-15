@@ -88,6 +88,9 @@
 	.title-color-primary {
 		@apply text-[#215AEF];
 	}
+	.flow-color-primary {
+		@apply bg-gradient-to-br from-red-800 to-red-500;
+	}
 	.progressbar-color-primary {
 		@apply bg-[#3B82F6];
 	}
@@ -96,5 +99,8 @@
 	}
 	.title-color-secondary {
 		@apply text-[#3B82F6];
+	}
+	.color-change {
+		animation: changeColor 1s ease-in-out forwards; /* 1초 동안 서서히 변경, 필요에 따라 조절 가능 */
 	}
 }
