@@ -19,6 +19,8 @@
 <div class="animate-right-primary hidden" />
 <div class="animate-right-secondary hidden" />
 <div class="animate-right-third hidden" />
+<div class="hidden bg-red-500" />
+<div class="hidden bg-neutral-500" />
 <div
 	use:inview={{
 		unobserveOnEnter: true,
