@@ -41,6 +41,11 @@
 					<GradientButton class="px-10 py-4 text-xl font-bold">코드스테이션 문의하기</GradientButton
 					>
 				</a>
+				<div class="h-2" />
+				<a
+					href="tel:010-9990-7337"
+					class="text-lg font-light text-neutral-500 underline max-md:text-base">전화로 문의하기</a
+				>
 			</div>
 		</ScrollDetectContainer>
 		<UnderArrow />
