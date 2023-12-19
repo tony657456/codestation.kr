@@ -43,7 +43,7 @@
 				</a>
 				<div class="h-2" />
 				<a
-					href="tel:010-9990-7337"
+					href="tel:070-8065-1727"
 					class="text-lg font-light text-neutral-500 underline max-md:text-base">전화로 문의하기</a
 				>
 			</div>
