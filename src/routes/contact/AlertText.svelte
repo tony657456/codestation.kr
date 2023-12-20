@@ -7,6 +7,6 @@
 		? 'hidden'
 		: ''}"
 >
-	<img src="images/warning.png" alt="warning" class="w-3" />
+	<img src="images/warning.webp" alt="warning" class="w-3" />
 	<span class="text-sm">답변을 입력해 주세요</span>
 </div>

@@ -7,7 +7,7 @@
 <Container class="min-h-screen items-center">
 	<div slot="background" class="relative h-full w-full">
 		<img
-			src="/images/design_background.png"
+			src="/images/design_background.webp"
 			alt="design_background"
 			class="absolute -z-10 h-full w-full object-cover"
 		/>
