@@ -7,7 +7,7 @@ type TFlow = {
 };
 
 export const CleanFlowSection: TFlow = {
-	imageUrl: '/images/flow-icon.png',
+	imageUrl: '/images/flow-icon.webp',
 	imageName: '코드스테이션의 강점 01',
 	title: '다른곳에는 없는',
 	colorTitle: '깔끔한 FLOW',
