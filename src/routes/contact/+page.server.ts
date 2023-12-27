@@ -22,11 +22,28 @@ export const actions = {
 		if (!purpose) return fail(400, { message: 'purpose is required' });
 		const budget = data.get('budget');
 		if (!budget) return fail(400, { message: 'budget is required' });
+		const additionalInformation = data.get('additionalInformation');
+		const file = data.get('file');
+		let fileUrl = '';
+		// upload file
+		if (file) {
+			const today = new Date();
+			const extension = (file as Blob).name.split('.').pop();
+			const { data: fileData, error: fileError } = await supabase.storage
+				.from('codestation-bucket')
+				.upload(`${today.getTime()}/${clientCompany}.${extension}`, file);
+			if (fileError) {
+				console.log('file-error', fileError);
+				return fail(500, { message: 'file upload error' });
+			}
+			fileUrl =
+				('https://mqtswjgwbqobgmwcngww.supabase.co/storage/v1/object/public/codestation-bucket' +
+					fileData?.path) as string;
+		}
 
 		try {
 			await supabase.from('contact').insert({
 				name,
-				information: 'test',
 				client_name: clientName,
 				client_phone_number: clientPhoneNumber,
 				client_email: clientEmail,
@@ -34,8 +51,11 @@ export const actions = {
 				type,
 				purpose,
 				budget,
+				additional_information: additionalInformation,
+				file_url: fileUrl,
 			});
 		} catch (error) {
+			return fail(500, { message: 'database error' });
 			console.log(error);
 		}
 		const slackMessageModule = new SlackMessageModule();
@@ -48,6 +68,8 @@ export const actions = {
 			type as string,
 			purpose as string,
 			budget as string,
+			additionalInformation as string | null,
+			fileUrl as string,
 		);
 		throw redirect(303, '/contact/success');
 	},

@@ -20,6 +20,8 @@ export class SlackMessageModule {
 		type: string,
 		purpose: string,
 		budget: string,
+		additional_information: string | null,
+		file_url: string,
 	) {
 		const message = `
       *새로운 문의가 들어왔습니다!*
@@ -31,6 +33,8 @@ export class SlackMessageModule {
       *개발 유형:* ${type}
       *개발 목적:* ${purpose}
       *예산:* ${budget}
+			*추가 정보:* ${additional_information}
+			*파일:* ${file_url}
     `;
 		return this.sendSlackMessage(message);
 	}
