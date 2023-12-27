@@ -28,7 +28,7 @@ export const actions = {
 		// upload file
 		if (file) {
 			const today = new Date();
-			const extension = (file as Blob).name.split('.').pop();
+			const extension = (file as File).name.split('.').pop();
 			const { data: fileData, error: fileError } = await supabase.storage
 				.from('codestation-bucket')
 				.upload(`${today.getTime()}/${clientCompany}.${extension}`, file);
