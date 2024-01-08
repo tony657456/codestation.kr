@@ -10,7 +10,7 @@
 		</div>
 		<div>
 			<span class="text-neutral-500">번호 : </span>
-			<span class="text-neutral-50 underline"> <a href="tel:070-8065-1727">070-8065-1727</a></span>
+			<span class="text-neutral-50 underline"> <a href="tel:010-9990-7337">010-9990-7337</a></span>
 		</div>
 		<!-- 문의 : contact@codestation.kr -->
 		<div>
