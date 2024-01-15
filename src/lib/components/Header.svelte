@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { contactModalShow } from '$lib/stores/contact-modal-store';
 	import Button from './Button.svelte';
 
 	let scrollY: number;
@@ -20,16 +21,12 @@
 		<a href="/">
 			<img src="/logo_name.png" alt="codestation_logo" class="w-[200px] max-md:w-[180px]" />
 		</a>
-		<a
-			href="/contact"
-			data-sveltekit-reload
-			class={$page.url.pathname === '/contact' ? 'hidden' : ''}
+
+		<Button
+			on:click={() => contactModalShow.set(true)}
+			class="transition-all duration-300 ease-in-out max-md:hidden {show
+				? 'opacity-100'
+				: 'opacity-0'} {$page.url.pathname === '/contact' ? 'hidden' : ''}">문의하기</Button
 		>
-			<Button
-				class="transition-all duration-300 ease-in-out max-md:hidden {show
-					? 'opacity-100'
-					: 'opacity-0'}">문의하기</Button
-			>
-		</a>
 	</div>
 </header>

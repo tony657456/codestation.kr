@@ -5,6 +5,7 @@
 	import UnderArrow from './UnderArrow.svelte';
 	let isInView: boolean;
 	const delay: TDelay = 150;
+	import { contactModalShow } from '$lib/stores/contact-modal-store';
 </script>
 
 <div class="relative h-screen">
@@ -37,15 +38,12 @@
 					>당신이 가진 비즈니스 아이디어를 최고의 프로덕트로</span
 				>
 				<div class="h-4" />
-				<a href="/contact" data-sveltekit-reload>
-					<GradientButton class="px-10 py-4 text-xl font-bold">코드스테이션 문의하기</GradientButton
-					>
-				</a>
-				<div class="h-2" />
-				<a
-					href="tel:010-9990-7337"
-					class="text-lg font-light text-neutral-500 underline max-md:text-base">전화로 문의하기</a
+				<GradientButton
+					on:click={() => contactModalShow.set(true)}
+					class="px-10 py-4 text-xl font-bold">코드스테이션 문의하기</GradientButton
 				>
+
+				<div class="h-2" />
 			</div>
 		</ScrollDetectContainer>
 		<UnderArrow />
